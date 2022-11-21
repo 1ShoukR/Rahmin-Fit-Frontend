@@ -2,9 +2,32 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import logger from 'redux-logger';
+import rootReducer from './reducers/rootReducer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
+
+const store = createStore(rootReducer, applyMiddleware(logger));
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Provider store={store}>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<App />} />
+        {/* <Route path='/free_consultation' element={} /> */}
+        {/* <Route path='/train' element={} /> */}
+        {/* <Route path='/compare' element={} /> */}
+        {/* <Route path='/why_rahmin_fit' element={} /> */}
+        {/* <Route path='/gallery' element={} /> */}
+        {/* <Route path='/refund_policy' element={} /> */}
+        {/* <Route path='/contact' element={} /> */}
+      </Routes>
+    </Provider>
+  </BrowserRouter>
 )
