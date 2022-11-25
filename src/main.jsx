@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar';
 
 // import rootReducer from './reducers/rootReducer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FreeConsultation from '../components/freeConsultation';
 
 
 
@@ -22,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<App />} />
-				{/* <Route path='/free_consultation' element={} /> */}
+				<Route path='/free_consultation' element={<FreeConsultation/>} />
 				{/* <Route path='/train' element={} /> */}
 				{/* <Route path='/compare' element={} /> */}
 				{/* <Route path='/why_rahmin_fit' element={} /> */}
