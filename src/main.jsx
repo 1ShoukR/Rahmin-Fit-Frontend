@@ -10,6 +10,8 @@ import Navbar from '../components/Navbar';
 // import rootReducer from './reducers/rootReducer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FreeConsultation from '../components/freeConsultation';
+import Train from '../components/Train';
+import Compare from '../components/Compare';
 
 
 
@@ -23,9 +25,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<App />} />
-				<Route path='/free_consultation' element={<FreeConsultation/>} />
-				{/* <Route path='/train' element={} /> */}
-				{/* <Route path='/compare' element={} /> */}
+				<Route path='/free_consultation' element={<FreeConsultation />} />
+				<Route path='/train' element={<Train />} />
+				<Route path='/compare' element={<Compare />} />
 				{/* <Route path='/why_rahmin_fit' element={} /> */}
 				{/* <Route path='/gallery' element={} /> */}
 				{/* <Route path='/refund_policy' element={} /> */}
