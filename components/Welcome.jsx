@@ -9,11 +9,6 @@ const Welcome = () => {
         Welcome
       </h1>
     </div>
-    <div>
-      <p>
-        this is practice for you ty
-      </p>
-    </div>
   </div>
 </>
   );
