@@ -13,4 +13,9 @@
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+.linkContainer a:hover {
+    background-color: blanchedalmond;
 }
