@@ -15,7 +15,7 @@ import Compare from '../components/Compare';
 import WhyRahminFit from '../components/WhyRahminFit';
 import Gallery from '../components/Gallery';
 import RefundPolicy from '../components/RefundPolicy';
-
+import Contact from '../components/Contact';
 
 
 const store = createStore(applyMiddleware(logger)); //put rootReducer before applyMiddleware 
@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='/why_rahmin_fit' element={<WhyRahminFit />} />
 				<Route path='/gallery' element={<Gallery />} />
 				<Route path='/refund_policy' element={<RefundPolicy />} />
-				{/* <Route path='/contact' element={} /> */}
+				<Route path='/contact' element={<Contact />} />
 			</Routes>
 		</Provider>
 	</BrowserRouter>

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/navbar.css"
 
 const Navbar = () => {
-  return (
+return (
 		<>
-			<nav>
-				<ul>
+			<nav className="wrapper">
+				<ul className="container">
 					<li>
 						<Link to="/">Home</Link>
 					</li>
@@ -21,15 +22,15 @@ const Navbar = () => {
 					<li>
 						<Link to="/why_rahmin_fit">Why Rahmin Fit</Link>
 					</li>
-                    <li>
-                        <Link to="/gallery">Gallery</Link>
-                    </li>
-                    <li>
-                        <Link to="/refund_policy">Refund Policy</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact Me</Link>
-                    </li>
+					<li>
+						<Link to="/gallery">Gallery</Link>
+					</li>
+					<li>
+						<Link to="/refund_policy">Refund Policy</Link>
+					</li>
+					<li>
+						<Link to="/contact">Contact Me</Link>
+					</li>
 				</ul>
 			</nav>
 		</>

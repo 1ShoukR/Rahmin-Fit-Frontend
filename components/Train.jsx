@@ -2,7 +2,9 @@ import React from "react";
 
 const Train = () => {
 return (
-    <div>Train</div>
+	<div>
+		<h1>Train</h1>
+	</div>
 );
 };
 
