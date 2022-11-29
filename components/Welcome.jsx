@@ -1,25 +1,21 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import Carousel from 'framer-motion-carousel';
+
 
 const Welcome = () => {
   return (
 		<>
-			<motion.div
-				animate={{
-					x: 0,
-					backgroundColor: '#000',
-					boxShadow: '10px 10px 0 rgba(0, 0, 0, 0.2)',
-					position: 'fixed',
-					transitionEnd: {
-						display: 'none',
-					},
-				}}
-			/>
+		<Carousel>
+			{[1, 2, 3, 4].map((item, i) => (
+					<img draggable="false" src={`./${item}.jpg`} key={i} width="100%" alt="" />
+			))}
 			<div>
 				<div>
 					<h1>EMBRACE YOUR NEW LIFESTYLE</h1>
 				</div>
 			</div>
+		</Carousel>
 		</>
 	);
 };
