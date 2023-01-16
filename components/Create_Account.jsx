@@ -1,4 +1,5 @@
 import React from "react";
+import { sendCreateAccountData } from "../Actions/createAccount";
 
 const Create_Account = () => {
   return (
@@ -23,6 +24,9 @@ const Create_Account = () => {
                 <div>
                     <p>Password</p>
                     <input type="password"  id=""  placeholder="Password"/>
+                </div>
+                <div>
+                    <button type="submit" onClick={(e)=>sendCreateAccountData(e)}>Submit</button>
                 </div>
             </form>
         </div>
