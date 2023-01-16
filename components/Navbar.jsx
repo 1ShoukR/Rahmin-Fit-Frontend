@@ -32,6 +32,9 @@ return (
 				<li className="linkContainer">
 					<Link to="/contact">Contact Me</Link>
 				</li>
+				<li className="linkContainer">
+					<Link to="/create_account">Create an Account</Link>
+				</li>
 			</ul>
 		</nav>
 	</>
